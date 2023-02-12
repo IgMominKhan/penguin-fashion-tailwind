@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            penguin: '#FFFBF0',
+            accent: '#FABE4C',
+            primary: "#A4BC46",
+            body: "#E5E5E5"
+          },
+          fontFamily: {
+            bebas: ['bebas neue', 'cursive'],
+            roboto: ['Roboto', "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- header area  -->
+
+  <header class="bg-penguin">
+    <div class="mx-auto w-[min(85%,73.125rem)]">
+
+      <!-- navigation bar -->
+      <nav class="font-roboto font-medium py-8 flex justify-between items-center">
+        <a href="" class=""><img src="./images/logo.png" class="max-w-[280px]" alt=""></a>
+
+        <div class="md:hidden"><img src="./icons/hamburger.svg" alt="" class="w-8"></div>
+        <ul class="hidden md:flex gap-4 ">
+          <li><a href="">Home </a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="h-screen  lg:flex items-center ">
+        <div class="flex-1 text-center md:text-star my-12">
+          <h1 class="text-7xl text-black font-bebas"><span class="text-accent block mb-4">Be the Penguins</span>
+            of Winter</h1>
+ 
+          <p>Lorem Ipsum is simply dummy text of the printing <br>
+            and typesetting industry.</p>
+          <button class="bg-primary px-5 py-3 text-white uppercase font-medium mt-4 rounded-lg"> <img src="./icons/shopping-cart 1.png" class="w-5 inline-block" alt=""> buy now</button>
+        </div>
+        <div class="flex-1 pb-12"><img class="mx-auto"  src="./images/model.png" alt=""></div>
+      </div>
+
+    </div>
+  </header>
+
+
+</body>
+
+</html>
